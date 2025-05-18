@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service Appointment Calendar</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+</body>
+<div class="stars" id="stars"></div>
+<div class="calendar-container">
+  <div class="calendar-header">
+    <button id="prev-month"><i class="fas fa-chevron-left"></i></button>
+    <h2 id="month-year">May 2023</h2>
+    <button id="next-month"><i class="fas fa-chevron-right"></i></button>
+  </div>
+
+  <div class="calendar-grid" id="calendar-grid">
+    <!-- Days of week header -->
+    <div class="day-header">Sun</div>
+    <div class="day-header">Mon</div>
+    <div class="day-header">Tue</div>
+    <div class="day-header">Wed</div>
+    <div class="day-header">Thu</div>
+    <div class="day-header">Fri</div>
+    <div class="day-header">Sat</div>
+
+
+  </div>
+
+  <div class="time-slots-container">
+    <h3 id="selected-date">Select a date</h3>
+    <div class="time-slots" id="time-slots">
+
+    </div>
+  </div>
+
+  <div class="appointment-details">
+    <h3>Appointment Details</h3>
+    <div class="details-content" id="appointment-details">
+      <p>Select a time slot to book an appointment</p>
+    </div>
+    <button id="confirm-btn" disabled>Confirm Appointment</button>
+  </div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+
+</html>
